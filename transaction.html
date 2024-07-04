@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Indonesian Tourism</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Transaksi</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="culture.html">Kebudayaan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hotels.html">Hotel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transaction.html">Transaksi</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <section>
+            <h2>Formulir Transaksi</h2>
+            <form id="transactionForm">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="hotel">Pilih Hotel</label>
+                    <select class="form-control" id="hotel" required>
+                        <option value="Hotel A">Hotel A</option>
+                        <option value="Hotel B">Hotel B</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="checkin">Tanggal Check-in</label>
+                    <input type="date" class="form-control" id="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Tanggal Check-out</label>
+                    <input type="date" class="form-control" id="checkout" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Indonesian Tourism</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
